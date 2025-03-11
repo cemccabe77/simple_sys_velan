@@ -1,0 +1,5028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>897</width>
+    <height>607</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>130</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>cmSimpleSys</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 0.5em;
+border-color:  rgb(239, 182, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: -5 3px 0 3px;
+	color:  rgb(239, 182, 0);
+}</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_70">
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>220</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 7px;
+    margin-top: 0.5em;
+border-color:  rgb(255, 194, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: -5 3px 0 3px;
+	color:  rgb(255, 194, 0);
+}</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_56">
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="rightMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <item row="0" column="2">
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>66</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="1">
+        <layout class="QGridLayout" name="gridLayout_9">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QGroupBox" name="groupBox_17">
+           <property name="minimumSize">
+            <size>
+             <width>500</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+           </property>
+           <property name="title">
+            <string>Pre Build</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_7">
+            <property name="leftMargin">
+             <number>5</number>
+            </property>
+            <property name="topMargin">
+             <number>5</number>
+            </property>
+            <property name="rightMargin">
+             <number>5</number>
+            </property>
+            <property name="bottomMargin">
+             <number>5</number>
+            </property>
+            <property name="spacing">
+             <number>3</number>
+            </property>
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_6">
+              <property name="spacing">
+               <number>3</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QLineEdit" name="lne_globCtlSuffix">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>ctl</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Ctl Suffix (optional)</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="lne_globJntSuffix">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>jnt</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>Joint Suffix (optional)</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <layout class="QGridLayout" name="gridLayout_2">
+                <property name="spacing">
+                 <number>3</number>
+                </property>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="lbl_globCtlShape">
+                  <property name="text">
+                   <string>Ctl Shape</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QComboBox" name="cbo_globCtlShape">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="currentIndex">
+                   <number>10</number>
+                  </property>
+                  <property name="maxVisibleItems">
+                   <number>50</number>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>sphere</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>arrow</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>arrowCurved</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>arrowDouble</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>arrowDoubleCurved</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>arrowFour</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>arrowFourCurved</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>arrowStrike</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>circle</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>circleH</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>circleV</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>circularArrow</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>chevron</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>cross</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>crossX</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>cube</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>diamond</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>star</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>star_8</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>fourArrowCircle</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>googleSign</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>googleSignSharp</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>joint</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>locator</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>locatorVolume</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>lollipopCircle</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>lollipopDouble</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>lollipopFour</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>lollipopSquare</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>square</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>triangle</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="1">
+               <layout class="QGridLayout" name="gridLayout_4">
+                <property name="spacing">
+                 <number>3</number>
+                </property>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="lbl_globCtlColor">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>Ctl Color</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QComboBox" name="cbo_globCtlColor">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="currentIndex">
+                   <number>0</number>
+                  </property>
+                  <property name="maxVisibleItems">
+                   <number>50</number>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>primary</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>secondary</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>tertiary</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>blue</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>darkBlue</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>lightBlue</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>softBlue</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>pastelBlue</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>red</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>darkRed</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>lightRed</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>pastelRed</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>green</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>darkGreen</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>lightGreen</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>blueGreen</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>turquoise</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>yellow</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>yellowGreen</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>lightYellow</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>pastelYellow</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>pink</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>darkPink</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>greyPink</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>brown</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>darkBrown</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>lightBrown</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>redBrown</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>pastelBrown</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>white</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>black</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>darkGrey</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>lightGrey</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="2" column="0">
+               <layout class="QGridLayout" name="gridLayout_5">
+                <property name="spacing">
+                 <number>3</number>
+                </property>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="lbl_globCtlSize">
+                  <property name="text">
+                   <string>Ctl Size</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QDoubleSpinBox" name="spn_globCtlSize">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>75</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="decimals">
+                   <number>2</number>
+                  </property>
+                  <property name="maximum">
+                   <double>1000.000000000000000</double>
+                  </property>
+                  <property name="singleStep">
+                   <double>0.100000000000000</double>
+                  </property>
+                  <property name="value">
+                   <double>1.000000000000000</double>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="2" column="1">
+               <layout class="QGridLayout" name="gridLayout">
+                <property name="spacing">
+                 <number>3</number>
+                </property>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="lbl_globAutoColorMargin">
+                  <property name="text">
+                   <string>Color Margin</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QDoubleSpinBox" name="spn_globAutoColorMargin">
+                  <property name="maximumSize">
+                   <size>
+                    <width>75</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string>Distance +/- along global X</string>
+                  </property>
+                  <property name="decimals">
+                   <number>3</number>
+                  </property>
+                  <property name="value">
+                   <double>0.100000000000000</double>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QGroupBox" name="groupBox_31">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+           </property>
+           <property name="title">
+            <string>Post Build</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_8">
+            <property name="leftMargin">
+             <number>5</number>
+            </property>
+            <property name="topMargin">
+             <number>5</number>
+            </property>
+            <property name="rightMargin">
+             <number>5</number>
+            </property>
+            <property name="bottomMargin">
+             <number>5</number>
+            </property>
+            <property name="spacing">
+             <number>3</number>
+            </property>
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_3">
+              <property name="spacing">
+               <number>3</number>
+              </property>
+              <item row="0" column="2">
+               <widget class="QPushButton" name="btn_setCtlColor">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="toolTip">
+                 <string>Set selected ctrl(s) color from Global setting</string>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(239, 182, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(255, 195, 0);
+color: rgb(0, 0, 0);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Set Color</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QPushButton" name="btn_setCtlSize">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="toolTip">
+                 <string>Set selected ctrl(s) size from Global setting</string>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(239, 182, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(255, 195, 0);
+color: rgb(0, 0, 0);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Set Size</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QPushButton" name="btn_setCtlShape">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="toolTip">
+                 <string>Set selected ctrl(s) shape from Global setting</string>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(239, 182, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(255, 195, 0);
+color: rgb(0, 0, 0);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Set Shape</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="QPushButton" name="btn_setCtlVis">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="toolTip">
+                 <string>Set ctrl(s) visibility to Head UI Host attrs</string>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(239, 182, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(255, 195, 0);
+color: rgb(0, 0, 0);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Set Vis</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="0">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>67</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1">
+        <widget class="QGroupBox" name="groupBox_35">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+         </property>
+         <property name="title">
+          <string>Select Child by Suffix</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_115">
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="rightMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
+          <property name="spacing">
+           <number>3</number>
+          </property>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="btn_selBySuffix">
+            <property name="minimumSize">
+             <size>
+              <width>180</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>Select edge loop on headCut mesh to create deformers for Lashes. Or select old Lash curve to rebuild.</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(239, 182, 0);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(255, 195, 0);
+color: rgb(0, 0, 0);
+}</string>
+            </property>
+            <property name="text">
+             <string>Select Children By Suffix</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" alignment="Qt::AlignHCenter">
+           <widget class="QComboBox" name="cbo_selSuffix">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <item>
+             <property name="text">
+              <string>jnt</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ctl</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>bfr</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>ctlRef</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>spljnt</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>bind</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>anim</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>cns</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>off</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>root</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>grp</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabBar::scroller {width: 90px; }
+</string>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Attr Control</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_13">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_12">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_10">
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_3">
+              <property name="minimumSize">
+               <size>
+                <width>290</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>290</width>
+                <height>120</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+              </property>
+              <property name="title">
+               <string>(un)Lock/(un)Hide</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_19">
+               <property name="leftMargin">
+                <number>9</number>
+               </property>
+               <property name="topMargin">
+                <number>9</number>
+               </property>
+               <property name="rightMargin">
+                <number>9</number>
+               </property>
+               <property name="bottomMargin">
+                <number>9</number>
+               </property>
+               <property name="spacing">
+                <number>6</number>
+               </property>
+               <item row="0" column="1">
+                <layout class="QGridLayout" name="gridLayout_17">
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="QComboBox" name="cbo_axisLockUnlock">
+                   <property name="toolTip">
+                    <string>Locks / Unlocks selected</string>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Unlock</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Lock</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QComboBox" name="cbo_hideUnhide">
+                   <item>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Hide</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Unhide</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="1" column="0" colspan="2">
+                  <widget class="QPushButton" name="btn_axisGo">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Go</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_15">
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="1" column="0">
+                  <widget class="QCheckBox" name="chk_axisTX">
+                   <property name="text">
+                    <string>tx</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QCheckBox" name="chk_axisRZ">
+                   <property name="text">
+                    <string>rz</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QCheckBox" name="chk_axisSY">
+                   <property name="text">
+                    <string>sy</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QCheckBox" name="chk_axisTY">
+                   <property name="text">
+                    <string>ty</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QCheckBox" name="chk_axisRX">
+                   <property name="text">
+                    <string>rx</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QCheckBox" name="chk_axisSX">
+                   <property name="text">
+                    <string>sx</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QCheckBox" name="chk_axisRY">
+                   <property name="text">
+                    <string>ry</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="2">
+                  <widget class="QCheckBox" name="chk_axisSZ">
+                   <property name="text">
+                    <string>sz</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QCheckBox" name="chk_axisTZ">
+                   <property name="text">
+                    <string>tz</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QCheckBox" name="chk_T">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox { color: rgb(239, 182, 0) };</string>
+                   </property>
+                   <property name="text">
+                    <string>T</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QCheckBox" name="chk_R">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox { color: rgb(239, 182, 0) };</string>
+                   </property>
+                   <property name="text">
+                    <string>R</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QCheckBox" name="chk_S">
+                   <property name="styleSheet">
+                    <string notr="true">QCheckBox { color: rgb(239, 182, 0) };</string>
+                   </property>
+                   <property name="text">
+                    <string>S</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QGroupBox" name="groupBox_38">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>290</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>290</width>
+                <height>94</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+              </property>
+              <property name="title">
+               <string>Parent Constraint</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_111">
+               <property name="leftMargin">
+                <number>5</number>
+               </property>
+               <property name="topMargin">
+                <number>5</number>
+               </property>
+               <property name="rightMargin">
+                <number>5</number>
+               </property>
+               <property name="bottomMargin">
+                <number>5</number>
+               </property>
+               <property name="spacing">
+                <number>3</number>
+               </property>
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_112">
+                 <item row="0" column="0">
+                  <widget class="QCheckBox" name="chk_maintainOffset">
+                   <property name="maximumSize">
+                    <size>
+                     <width>50</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Maintain Offset</string>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::RightToLeft</enum>
+                   </property>
+                   <property name="text">
+                    <string>MO</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QPushButton" name="btn_createMatCon">
+                   <property name="minimumSize">
+                    <size>
+                     <width>120</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Creates Matrix Constraint using checked attrs. Select Parent, then Child</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Create Constraint</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0" colspan="2">
+                  <widget class="QPushButton" name="btn_delMatCon">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Deletes Matrix Constraint</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Delete Constraint</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QGroupBox" name="groupBox_36">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>290</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>290</width>
+                <height>125</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+              </property>
+              <property name="title">
+               <string>Connect</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_11">
+               <property name="leftMargin">
+                <number>5</number>
+               </property>
+               <property name="topMargin">
+                <number>5</number>
+               </property>
+               <property name="rightMargin">
+                <number>5</number>
+               </property>
+               <property name="bottomMargin">
+                <number>5</number>
+               </property>
+               <property name="spacing">
+                <number>3</number>
+               </property>
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_16">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item row="0" column="1">
+                  <widget class="QPushButton" name="btn_globalSclObj">
+                   <property name="maximumSize">
+                    <size>
+                     <width>40</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>&lt;&lt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0" colspan="2">
+                  <widget class="QPushButton" name="btn_globalScaleConnect">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Connects rig global scale to transform scale attrs</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Global Scale</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0" colspan="2">
+                  <widget class="QPushButton" name="btn_directConnect">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Connects selected SRT attr(s). Select SOURCE then TARGET. Multiple Targets allowed.</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Direct Connect</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLineEdit" name="lne_globalSclObj">
+                   <property name="toolTip">
+                    <string>Object that contains globalScale attr</string>
+                   </property>
+                   <property name="placeholderText">
+                    <string>global_C0_ctl</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <spacer name="verticalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>247</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_12">
+       <attribute name="title">
+        <string>Skin Tools</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_42">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_39">
+          <item row="1" column="0">
+           <spacer name="verticalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_30">
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_22">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>75</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>75</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+              </property>
+              <property name="title">
+               <string>Import / Export</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_92" rowstretch="0,0">
+               <property name="leftMargin">
+                <number>5</number>
+               </property>
+               <property name="topMargin">
+                <number>5</number>
+               </property>
+               <property name="rightMargin">
+                <number>5</number>
+               </property>
+               <property name="bottomMargin">
+                <number>5</number>
+               </property>
+               <property name="spacing">
+                <number>3</number>
+               </property>
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_91">
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="QPushButton" name="btn_importWeights">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Import XML weight file.</string>
+                   </property>
+                   <property name="statusTip">
+                    <string>Import weight(s) from directory</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Import Weight(s)</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QPushButton" name="btn_exportWeights">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Export XML weight file.</string>
+                   </property>
+                   <property name="statusTip">
+                    <string>Export weight(s) to directory</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Export Weight(s)</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="0">
+                <widget class="QPushButton" name="btn_selectClstrInfl">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Select joints in objects skinCluster</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Select Clstr Jts</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QGroupBox" name="groupBox_40">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+              </property>
+              <property name="title">
+               <string>Transfer</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_14">
+               <property name="leftMargin">
+                <number>5</number>
+               </property>
+               <property name="topMargin">
+                <number>5</number>
+               </property>
+               <property name="rightMargin">
+                <number>5</number>
+               </property>
+               <property name="bottomMargin">
+                <number>5</number>
+               </property>
+               <property name="spacing">
+                <number>3</number>
+               </property>
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_47">
+                 <item row="0" column="0">
+                  <widget class="QPushButton" name="btn_transferWeights">
+                   <property name="minimumSize">
+                    <size>
+                     <width>160</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>160</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Select SOURCE then TARGET(S).  Poly to Nurbs IS supported. Method is Closest Point, Closest Joint, One to One</string>
+                   </property>
+                   <property name="statusTip">
+                    <string/>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Transfer Weights</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QCheckBox" name="chk_transferWeightsRemove">
+                   <property name="text">
+                    <string>Remove Unused</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QGroupBox" name="groupBox_20">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>80</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>80</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+              </property>
+              <property name="title">
+               <string>Joint Pre-Bind Matrix</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_71">
+               <property name="leftMargin">
+                <number>5</number>
+               </property>
+               <property name="topMargin">
+                <number>5</number>
+               </property>
+               <property name="rightMargin">
+                <number>5</number>
+               </property>
+               <property name="bottomMargin">
+                <number>5</number>
+               </property>
+               <property name="spacing">
+                <number>3</number>
+               </property>
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_68">
+                 <item row="0" column="0">
+                  <widget class="QComboBox" name="cbo_preBindJoint">
+                   <property name="toolTip">
+                    <string>Joint suffix</string>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>jnt</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>bind</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QComboBox" name="cbo_preBindBfr">
+                   <property name="toolTip">
+                    <string>Buffer suffix</string>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>ctlRef (Strap Rig)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>cns (mGear Jnt)</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>bfr (Face Rig)</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="1" column="0" colspan="2">
+                  <widget class="QPushButton" name="btn_ctlPreBindMat">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Connects the joints bfr.wm as bindpose prematrix. Select joints, then object with skinCluster</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Connect .wm</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QGroupBox" name="groupBox_43">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+              </property>
+              <property name="title">
+               <string>BindPose</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_29">
+               <property name="leftMargin">
+                <number>5</number>
+               </property>
+               <property name="topMargin">
+                <number>5</number>
+               </property>
+               <property name="rightMargin">
+                <number>5</number>
+               </property>
+               <property name="bottomMargin">
+                <number>5</number>
+               </property>
+               <property name="spacing">
+                <number>3</number>
+               </property>
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_67">
+                 <item row="0" column="0">
+                  <widget class="QPushButton" name="btn_resetBindPose">
+                   <property name="minimumSize">
+                    <size>
+                     <width>160</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>160</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Sets new bindPose, and sets Prefered Angle (option) for all joints in selected mesh skinCluster</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Set BindPose</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QCheckBox" name="chk_bindPoseAngle">
+                   <property name="toolTip">
+                    <string>If checked, joints preferred angle will be set to its current angle when BindPose is run</string>
+                   </property>
+                   <property name="text">
+                    <string>Set Preferred Angle</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="title">
+        <string>Mesh Control</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_50">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_48">
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="groupBox_39">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+            </property>
+            <property name="title">
+             <string>Points</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_31">
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <property name="spacing">
+              <number>3</number>
+             </property>
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_28">
+               <property name="spacing">
+                <number>3</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="QPushButton" name="btn_meshUpdateOrig">
+                 <property name="minimumSize">
+                  <size>
+                   <width>110</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Updates Target mesh to shape of Source mesh. Works on Mesh, Select SOURCE then TARGET. Auto option for multi mesh updates.</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Update Shape</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QCheckBox" name="chk_updateAuto">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>If checked, select the newly imported mdl alembic objects in the outliner. If NOT checked. Select SOURCE then TARGET for individual shape updates.</string>
+                 </property>
+                 <property name="text">
+                  <string>Auto</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0" colspan="2">
+                <widget class="QPushButton" name="btn_meshMatchPoint">
+                 <property name="minimumSize">
+                  <size>
+                   <width>110</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Target to follow source mesh transformation, and deformation. Works on Mesh, Nurbs, Curves. Select DRIVER then DRIVEN</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Match Point Pos</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QGroupBox" name="groupBox_44">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>120</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>120</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+            </property>
+            <property name="title">
+             <string>Published Geo</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_121">
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <property name="spacing">
+              <number>3</number>
+             </property>
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_32">
+               <property name="spacing">
+                <number>3</number>
+               </property>
+               <item row="1" column="0">
+                <widget class="QPushButton" name="btn_delUnShp">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Delete unused shape nodes from the scene.</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Del Unused Shapes</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QPushButton" name="btn_smoothEdges">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Smooth polygon edges</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Smooth Edges</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>295</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Strap Rigs</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_51">
+        <item row="0" column="0">
+         <spacer name="horizontalSpacer_11">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>26</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <layout class="QGridLayout" name="gridLayout_18">
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="grp_strapGuide">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+            </property>
+            <property name="title">
+             <string>Guides on Surface</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_41">
+             <property name="leftMargin">
+              <number>9</number>
+             </property>
+             <property name="topMargin">
+              <number>9</number>
+             </property>
+             <property name="rightMargin">
+              <number>9</number>
+             </property>
+             <property name="bottomMargin">
+              <number>9</number>
+             </property>
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_40">
+               <property name="spacing">
+                <number>3</number>
+               </property>
+               <item row="0" column="0" colspan="2">
+                <widget class="QPushButton" name="btn_prepSrf">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Create new surface, or rebuild selected nurbs 0,1 Parameterization. Displays UV border.</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Prep Srf</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2" colspan="2">
+                <widget class="QPushButton" name="btn_swapUV">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Spin nurbs surface border edges</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Swap U,V</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0" colspan="4">
+                <widget class="Line" name="line_3">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QSpinBox" name="spn_strapGuideRow">
+                 <property name="minimumSize">
+                  <size>
+                   <width>75</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>75</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Number or guide rows to create</string>
+                 </property>
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="value">
+                  <number>1</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLabel" name="lbl_strapGuideRow">
+                 <property name="toolTip">
+                  <string>Number or guide rows to create (U Param Red)</string>
+                 </property>
+                 <property name="text">
+                  <string>Gde Row</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="2">
+                <widget class="QSpinBox" name="spn_strapGuideColumn">
+                 <property name="minimumSize">
+                  <size>
+                   <width>75</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>75</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Number or guide columns to create</string>
+                 </property>
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="value">
+                  <number>5</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="3">
+                <widget class="QLabel" name="lbl_strapGuideColumn">
+                 <property name="toolTip">
+                  <string>Number or guide columns to create (V Param Green)</string>
+                 </property>
+                 <property name="text">
+                  <string>Gde Column</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0" colspan="4">
+                <widget class="Line" name="line_18">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0" colspan="2">
+                <widget class="QCheckBox" name="chk_strapSkipLast">
+                 <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+                 </property>
+                 <property name="text">
+                  <string>Closed Srf (cylinder)</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="2" colspan="2">
+                <widget class="QPushButton" name="btn_goGuidesOnSrf">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Create guide locators on nurb surface</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Go</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QGroupBox" name="grp_strapRig">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+            </property>
+            <property name="title">
+             <string>Rig From Guides</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_45">
+             <property name="leftMargin">
+              <number>9</number>
+             </property>
+             <property name="topMargin">
+              <number>9</number>
+             </property>
+             <property name="rightMargin">
+              <number>9</number>
+             </property>
+             <property name="bottomMargin">
+              <number>9</number>
+             </property>
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_44">
+               <property name="spacing">
+                <number>3</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="QSpinBox" name="spn_strapJntRow">
+                 <property name="minimumSize">
+                  <size>
+                   <width>50</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>50</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Number or joint rows to create on dorito mesh</string>
+                 </property>
+                 <property name="minimum">
+                  <number>0</number>
+                 </property>
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
+                 <property name="value">
+                  <number>0</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1" colspan="2">
+                <widget class="QLabel" name="lbl_strapJntRow_3">
+                 <property name="toolTip">
+                  <string>If 0, no dorito joints will be created.</string>
+                 </property>
+                 <property name="text">
+                  <string>*Jnt Row</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="3">
+                <widget class="QSpinBox" name="spn_strapJntColumn">
+                 <property name="minimumSize">
+                  <size>
+                   <width>50</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>50</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Number or joint columns to create on dorito mesh</string>
+                 </property>
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
+                 <property name="value">
+                  <number>10</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="4">
+                <widget class="QLabel" name="lbl_strapJntColumn_2">
+                 <property name="toolTip">
+                  <string>Number or joint columns to create on dorito mesh</string>
+                 </property>
+                 <property name="text">
+                  <string>Jnt Column</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0" colspan="5">
+                <widget class="Line" name="line_23">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="3">
+                <widget class="QSpinBox" name="spn_ikSplineNum">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>50</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>50</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Number of joints in IK Spline</string>
+                 </property>
+                 <property name="value">
+                  <number>10</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="4">
+                <widget class="QLabel" name="lbl_ikSplineNo_2">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="toolTip">
+                  <string>Number of joints in IK Spline</string>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+                 </property>
+                 <property name="text">
+                  <string>Spl. Column</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0" colspan="5">
+                <widget class="Line" name="line_24">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0" colspan="2">
+                <widget class="QCheckBox" name="chk_makeCtlFK">
+                 <property name="toolTip">
+                  <string>Builds ctls in FK mode, with IK option</string>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+                 </property>
+                 <property name="text">
+                  <string>Make Ctls FK</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="2" colspan="3">
+                <widget class="QCheckBox" name="chk_lra">
+                 <property name="toolTip">
+                  <string>Turn on Local Rotation Axis for deformer joints</string>
+                 </property>
+                 <property name="text">
+                  <string>Display Local Rot Axis</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="0" colspan="5">
+                <widget class="Line" name="line_17">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="0" colspan="5">
+                <widget class="QPushButton" name="btn_goStrapRig">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Build rig from Guides on Surface, or current selected nurbs surface with _ctlGde children</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Go</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0" colspan="3">
+                <widget class="QCheckBox" name="chk_ikSpline">
+                 <property name="text">
+                  <string>IK Spline</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="2">
+         <spacer name="horizontalSpacer_12">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>27</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="1">
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>449</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>Curve Rigs</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_52">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_20">
+          <item row="0" column="0">
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="1">
+           <widget class="QGroupBox" name="groupBox_24">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+            </property>
+            <property name="title">
+             <string>Guides on Curve</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_124">
+             <property name="leftMargin">
+              <number>9</number>
+             </property>
+             <property name="topMargin">
+              <number>9</number>
+             </property>
+             <property name="rightMargin">
+              <number>9</number>
+             </property>
+             <property name="bottomMargin">
+              <number>9</number>
+             </property>
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_125">
+               <item row="0" column="0">
+                <widget class="QSpinBox" name="spn_gdeOnCrv">
+                 <property name="minimumSize">
+                  <size>
+                   <width>75</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>75</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="minimum">
+                  <number>2</number>
+                 </property>
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
+                 <property name="value">
+                  <number>2</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QPushButton" name="btn_gdeOnCrvGo">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Create guides evenly along curve. Position guides as needed. Yellow guide defines curve direction.</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Go</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QGroupBox" name="groupBox_27">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+            </property>
+            <property name="title">
+             <string>Rig From Guides</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_126">
+             <property name="leftMargin">
+              <number>9</number>
+             </property>
+             <property name="topMargin">
+              <number>9</number>
+             </property>
+             <property name="rightMargin">
+              <number>9</number>
+             </property>
+             <property name="bottomMargin">
+              <number>9</number>
+             </property>
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_127">
+               <item row="0" column="0">
+                <widget class="QComboBox" name="cbo_crvRigType">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoFillBackground">
+                  <bool>false</bool>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>IK/FK</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>FK</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QPushButton" name="btn_bldCrvRigGo">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Build rig from Guides on Curve, or current selected nurbs curve with _ctlGde children</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Go</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>536</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_8">
+       <attribute name="title">
+        <string>Create On</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_22">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_21">
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="groupBox_13">
+            <property name="minimumSize">
+             <size>
+              <width>400</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>400</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+            </property>
+            <property name="title">
+             <string>Create on Surface</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_65">
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_77">
+               <property name="spacing">
+                <number>3</number>
+               </property>
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_83">
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="QPushButton" name="btn_utilPrepSrf">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Create new surface, or rebuild selected nurbs 0,1 Parameterization. Displays UV border.</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Prep Srf</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QPushButton" name="btn_utilSwapUV">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Spin nurbs surface border edges</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Swap U,V</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="0" column="1">
+                <widget class="Line" name="line_6">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <layout class="QGridLayout" name="gridLayout_86">
+                 <item row="0" column="0">
+                  <widget class="QComboBox" name="cbo_utilObjType">
+                   <property name="layoutDirection">
+                    <enum>Qt::LeftToRight</enum>
+                   </property>
+                   <property name="currentText">
+                    <string>Joint</string>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>Joint</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Locator</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <layout class="QGridLayout" name="gridLayout_88">
+                   <property name="spacing">
+                    <number>3</number>
+                   </property>
+                   <item row="0" column="0">
+                    <layout class="QGridLayout" name="gridLayout_89">
+                     <item row="0" column="0">
+                      <widget class="QSpinBox" name="spn_utilRow">
+                       <property name="minimumSize">
+                        <size>
+                         <width>75</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>75</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="minimum">
+                        <number>1</number>
+                       </property>
+                       <property name="maximum">
+                        <number>500</number>
+                       </property>
+                       <property name="value">
+                        <number>1</number>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QLabel" name="lbl_utilRow">
+                       <property name="text">
+                        <string>Row Num.</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item row="1" column="0">
+                    <layout class="QGridLayout" name="gridLayout_94">
+                     <item row="0" column="0">
+                      <widget class="QSpinBox" name="spn_utilColumn">
+                       <property name="minimumSize">
+                        <size>
+                         <width>75</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>75</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="minimum">
+                        <number>1</number>
+                       </property>
+                       <property name="maximum">
+                        <number>500</number>
+                       </property>
+                       <property name="value">
+                        <number>1</number>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QLabel" name="lbl_utilColumn">
+                       <property name="text">
+                        <string>Column Num</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item row="0" column="3">
+                <widget class="Line" name="line_25">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="4">
+                <layout class="QGridLayout" name="gridLayout_99">
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="QCheckBox" name="chk_srfSkipLast">
+                   <property name="toolTip">
+                    <string>For closed surfaces</string>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::LeftToRight</enum>
+                   </property>
+                   <property name="text">
+                    <string>Skip Last</string>
+                   </property>
+                   <property name="checked">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QPushButton" name="btn_utilCreateOnSrf">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Creates the selected items evenly along nurbs surface</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Go</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QGroupBox" name="groupBox_14">
+            <property name="minimumSize">
+             <size>
+              <width>400</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>400</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+            </property>
+            <property name="title">
+             <string>Create On Curve</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_100">
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_101">
+               <property name="spacing">
+                <number>3</number>
+               </property>
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_102">
+                 <item row="0" column="0">
+                  <widget class="QSpinBox" name="spn_crvNumOf">
+                   <property name="minimumSize">
+                    <size>
+                     <width>75</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>75</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="minimum">
+                    <number>1</number>
+                   </property>
+                   <property name="maximum">
+                    <number>1000</number>
+                   </property>
+                   <property name="value">
+                    <number>1</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1" alignment="Qt::AlignRight">
+                  <widget class="QLabel" name="lbl_crvNumOf">
+                   <property name="text">
+                    <string>No. of</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QComboBox" name="cbo_crvNumOf">
+                   <property name="minimumSize">
+                    <size>
+                     <width>270</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>260</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="currentText">
+                    <string>Joints</string>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>Joints</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Locators</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="0">
+                <layout class="QGridLayout" name="gridLayout_108">
+                 <item row="0" column="1">
+                  <widget class="QPushButton" name="btn_crvGo">
+                   <property name="minimumSize">
+                    <size>
+                     <width>300</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Create items evenly along curve. Select curve and run</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Go</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QCheckBox" name="chk_crvJntAsChain">
+                   <property name="layoutDirection">
+                    <enum>Qt::LeftToRight</enum>
+                   </property>
+                   <property name="text">
+                    <string>Chain</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QGroupBox" name="groupBox_41">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>47</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_131">
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QPushButton" name="btn_jntOnVtx">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Creates joints attached to mesh vertex. UV's are required on the mesh. And the mesh have transforms frozen.</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(255, 249, 227);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(255, 249, 227);
+color: rgb(0, 0, 0);
+}</string>
+               </property>
+               <property name="text">
+                <string>Jnt on Mesh Vert</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <spacer name="verticalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>295</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_9">
+       <attribute name="title">
+        <string>Constrain To</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_54">
+        <item row="0" column="0">
+         <spacer name="horizontalSpacer_10">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>161</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <layout class="QGridLayout" name="gridLayout_53">
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="groupBox_15">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>330</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>330</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+            </property>
+            <property name="title">
+             <string>Constrain To Surface</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_24">
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_23">
+               <property name="spacing">
+                <number>3</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="QCheckBox" name="checkBox">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string>Translate</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QCheckBox" name="checkBox_2">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string>Rotate</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0" colspan="2">
+                <widget class="QComboBox" name="cbo_utilConsMethod">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Matrix</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Follicle</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="2" column="0" colspan="2">
+                <widget class="QPushButton" name="btn_utilConstrainToSrf">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Constrain selected items to nurbs surface by closest point. Select nurbs surface last</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Go</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QGroupBox" name="groupBox_16">
+            <property name="minimumSize">
+             <size>
+              <width>330</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+            </property>
+            <property name="title">
+             <string>Constrain to Curve</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_118">
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_119">
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_120">
+                 <item row="0" column="0">
+                  <widget class="QComboBox" name="cbo_crvConstType">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="currentIndex">
+                    <number>3</number>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>Scene Up</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Obj Up</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Obj Rot Up</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Vector</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Normal</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="lne_crvUpObj">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>120</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>150</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Up Object</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QPushButton" name="btn_crvUpObjGet">
+                   <property name="maximumSize">
+                    <size>
+                     <width>40</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>&lt;&lt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="1" column="0">
+                <layout class="QGridLayout" name="gridLayout_122">
+                 <item row="0" column="0">
+                  <widget class="QCheckBox" name="chk_crvPositionOnly">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="toolTip">
+                    <string>Position Only is Parametric placement (no sliding)</string>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::LeftToRight</enum>
+                   </property>
+                   <property name="text">
+                    <string>Position Only</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="checked">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QCheckBox" name="chk_crvParametric">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="toolTip">
+                    <string>Sticks to curve. Non-Parametric will slide on crv length is changed.</string>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::LeftToRight</enum>
+                   </property>
+                   <property name="text">
+                    <string>Parametric</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QPushButton" name="btn_crvConstGo">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string>Constrain items to closest point on curve. Select curve last</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Go</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="2">
+         <spacer name="horizontalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>160</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="1">
+         <spacer name="verticalSpacer_9">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>404</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_10">
+       <attribute name="title">
+        <string>Single Ctl</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_25">
+        <item row="0" column="0">
+         <spacer name="horizontalSpacer_26">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>158</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="groupBox_33">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>47</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+          </property>
+          <property name="title">
+           <string>Singles</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_60">
+           <property name="leftMargin">
+            <number>5</number>
+           </property>
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
+           <property name="spacing">
+            <number>5</number>
+           </property>
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_132">
+             <property name="spacing">
+              <number>3</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QLineEdit" name="lne_singlesName">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="placeholderText">
+                <string>Ctl Name</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QCheckBox" name="chk_singleJnt">
+               <property name="text">
+                <string>Jnt</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="btn_singleCtl">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+               </property>
+               <property name="text">
+                <string>Single Ctl</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QPushButton" name="btn_singlePatch">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+               </property>
+               <property name="text">
+                <string>Single Patch</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <spacer name="horizontalSpacer_27">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>157</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="1">
+         <spacer name="verticalSpacer_39">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>320</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_11">
+       <attribute name="title">
+        <string>Match Move Ctl</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_26">
+        <item row="0" column="0">
+         <spacer name="horizontalSpacer_30">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>213</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="groupBox_42">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>47</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+          </property>
+          <property name="title">
+           <string>MM Ctl(s) from Vtx</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_133">
+           <property name="leftMargin">
+            <number>5</number>
+           </property>
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
+           <property name="spacing">
+            <number>5</number>
+           </property>
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_134">
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="chk_mmOrient">
+               <property name="toolTip">
+                <string>Orient ctls to vertex normal</string>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="text">
+                <string>Orient to Mesh</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QCheckBox" name="chk_mmDorito">
+               <property name="toolTip">
+                <string>Creates decondary dorito mesh, that is deformed by ctls</string>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="text">
+                <string>Dorito Mesh</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="btn_mmGo">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Creates Match Move controllers on selected vetex(s), Selected mesh needs to be deformed on vertex level for ctls to follow.</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+               </property>
+               <property name="text">
+                <string>Go</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <spacer name="horizontalSpacer_31">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>213</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="1">
+         <spacer name="verticalSpacer_42">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>320</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>btn_setCtlSize</tabstop>
+  <tabstop>btn_setCtlShape</tabstop>
+  <tabstop>btn_setCtlColor</tabstop>
+  <tabstop>spn_globCtlSize</tabstop>
+  <tabstop>cbo_globCtlShape</tabstop>
+  <tabstop>cbo_globCtlColor</tabstop>
+  <tabstop>lne_globCtlSuffix</tabstop>
+  <tabstop>lne_globJntSuffix</tabstop>
+  <tabstop>spn_globAutoColorMargin</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>chk_ikSpline</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>spn_ikSplineNum</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>532</x>
+     <y>308</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>614</x>
+     <y>308</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chk_T</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>chk_axisTY</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>244</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>244</x>
+     <y>346</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chk_T</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>chk_axisTX</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>244</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>244</x>
+     <y>323</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chk_R</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>chk_axisRZ</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>284</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>284</x>
+     <y>369</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chk_S</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>chk_axisSX</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>326</x>
+     <y>323</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chk_R</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>chk_axisRX</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>284</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>284</x>
+     <y>323</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chk_R</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>chk_axisRY</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>284</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>284</x>
+     <y>346</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chk_T</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>chk_axisTZ</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>244</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>244</x>
+     <y>369</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chk_S</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>chk_axisSY</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>326</x>
+     <y>346</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chk_S</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>chk_axisSZ</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>326</x>
+     <y>369</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

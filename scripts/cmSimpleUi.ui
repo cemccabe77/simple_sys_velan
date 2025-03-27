@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>897</width>
-    <height>607</height>
+    <width>883</width>
+    <height>627</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -2462,7 +2462,7 @@ QGroupBox::title {
 }</string>
             </property>
             <property name="title">
-             <string>Published Geo</string>
+             <string>Scale Published Geo</string>
             </property>
             <layout class="QGridLayout" name="gridLayout_121">
              <property name="leftMargin">
@@ -2485,41 +2485,6 @@ QGroupBox::title {
                <property name="spacing">
                 <number>3</number>
                </property>
-               <item row="1" column="0">
-                <widget class="QPushButton" name="btn_delUnShp">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>25</height>
-                  </size>
-                 </property>
-                 <property name="toolTip">
-                  <string>Delete unused shape nodes from the scene.</string>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QPushButton{
-border-style: solid;
-border-color: black;
-border-width: 1px;
-border-radius: 4px;
-background-color: rgb(253, 240, 197);
-color: rgb(0, 0, 0);
-}
-QPushButton:hover {   
-border-style: solid;
-border-color: black;
-border-width: 1px;
-border-radius: 4px;
-background-color: rgb(240, 240, 240
-);
-color: rgb(0, 0, 0);
-}</string>
-                 </property>
-                 <property name="text">
-                  <string>Del Unused Shapes</string>
-                 </property>
-                </widget>
-               </item>
                <item row="0" column="0">
                 <widget class="QPushButton" name="btn_smoothEdges">
                  <property name="enabled">
@@ -2555,6 +2520,41 @@ color: rgb(0, 0, 0);
                  </property>
                  <property name="text">
                   <string>Smooth Edges</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QPushButton" name="btn_delUnShp">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Delete unused shape nodes from the scene.</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Del Unused Shapes</string>
                  </property>
                 </widget>
                </item>
@@ -4079,148 +4079,9 @@ color: rgb(0, 0, 0);
         </item>
         <item row="0" column="1">
          <layout class="QGridLayout" name="gridLayout_53">
-          <item row="0" column="0">
-           <widget class="QGroupBox" name="groupBox_15">
-            <property name="enabled">
-             <bool>true</bool>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>330</width>
-              <height>100</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>330</width>
-              <height>100</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QGroupBox {
-    border: 1px solid gray;
-    border-radius: 9px;
-    margin-top: 0.5em;
-border-color:  rgb(150, 114, 0);
-}
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 3px 0 3px;
-	color:  rgb(150, 114, 0);
-}</string>
-            </property>
-            <property name="title">
-             <string>Constrain To Surface</string>
-            </property>
-            <layout class="QGridLayout" name="gridLayout_24">
-             <property name="leftMargin">
-              <number>5</number>
-             </property>
-             <property name="topMargin">
-              <number>5</number>
-             </property>
-             <property name="rightMargin">
-              <number>5</number>
-             </property>
-             <property name="bottomMargin">
-              <number>5</number>
-             </property>
-             <property name="spacing">
-              <number>5</number>
-             </property>
-             <item row="0" column="0">
-              <layout class="QGridLayout" name="gridLayout_23">
-               <property name="spacing">
-                <number>3</number>
-               </property>
-               <item row="0" column="0">
-                <widget class="QCheckBox" name="checkBox">
-                 <property name="enabled">
-                  <bool>false</bool>
-                 </property>
-                 <property name="text">
-                  <string>Translate</string>
-                 </property>
-                 <property name="checked">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="1">
-                <widget class="QCheckBox" name="checkBox_2">
-                 <property name="enabled">
-                  <bool>false</bool>
-                 </property>
-                 <property name="text">
-                  <string>Rotate</string>
-                 </property>
-                 <property name="checked">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="0" colspan="2">
-                <widget class="QComboBox" name="cbo_utilConsMethod">
-                 <property name="minimumSize">
-                  <size>
-                   <width>100</width>
-                   <height>0</height>
-                  </size>
-                 </property>
-                 <item>
-                  <property name="text">
-                   <string>Matrix</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Follicle</string>
-                  </property>
-                 </item>
-                </widget>
-               </item>
-               <item row="2" column="0" colspan="2">
-                <widget class="QPushButton" name="btn_utilConstrainToSrf">
-                 <property name="minimumSize">
-                  <size>
-                   <width>100</width>
-                   <height>25</height>
-                  </size>
-                 </property>
-                 <property name="toolTip">
-                  <string>Constrain selected items to nurbs surface by closest point. Select nurbs surface last</string>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QPushButton{
-border-style: solid;
-border-color: black;
-border-width: 1px;
-border-radius: 4px;
-background-color: rgb(253, 240, 197);
-color: rgb(0, 0, 0);
-}
-QPushButton:hover {   
-border-style: solid;
-border-color: black;
-border-width: 1px;
-border-radius: 4px;
-background-color: rgb(240, 240, 240
-);
-color: rgb(0, 0, 0);
-}</string>
-                 </property>
-                 <property name="text">
-                  <string>Go</string>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </item>
-            </layout>
-           </widget>
-          </item>
+          <property name="horizontalSpacing">
+           <number>6</number>
+          </property>
           <item row="1" column="0">
            <widget class="QGroupBox" name="groupBox_16">
             <property name="minimumSize">
@@ -4362,7 +4223,7 @@ QGroupBox::title {
                     <bool>true</bool>
                    </property>
                    <property name="toolTip">
-                    <string>Position Only is Parametric placement (no sliding)</string>
+                    <string>Ignores rotation when constraining to curve.</string>
                    </property>
                    <property name="layoutDirection">
                     <enum>Qt::LeftToRight</enum>
@@ -4378,29 +4239,7 @@ QGroupBox::title {
                    </property>
                   </widget>
                  </item>
-                 <item row="0" column="1">
-                  <widget class="QCheckBox" name="chk_crvParametric">
-                   <property name="enabled">
-                    <bool>true</bool>
-                   </property>
-                   <property name="toolTip">
-                    <string>Sticks to curve. Non-Parametric will slide on crv length is changed.</string>
-                   </property>
-                   <property name="layoutDirection">
-                    <enum>Qt::LeftToRight</enum>
-                   </property>
-                   <property name="text">
-                    <string>Parametric</string>
-                   </property>
-                   <property name="checkable">
-                    <bool>true</bool>
-                   </property>
-                   <property name="checked">
-                    <bool>true</bool>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="0" column="2">
+                 <item row="0" column="3">
                   <widget class="QPushButton" name="btn_crvConstGo">
                    <property name="minimumSize">
                     <size>
@@ -4435,7 +4274,227 @@ color: rgb(0, 0, 0);
                    </property>
                   </widget>
                  </item>
+                 <item row="0" column="1">
+                  <widget class="QCheckBox" name="chk_crvParametric">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="toolTip">
+                    <string>(OFF) objects will slide on curve. (ON) objects do not slide on curve.</string>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::LeftToRight</enum>
+                   </property>
+                   <property name="text">
+                    <string>Parametric</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="checked">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QCheckBox" name="chk_crvPositionOffset">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="toolTip">
+                    <string>Constrains objects to curve using offset matrix.</string>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::LeftToRight</enum>
+                   </property>
+                   <property name="text">
+                    <string>Offset</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="checked">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
                 </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="groupBox_15">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>384</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>330</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox {
+    border: 1px solid gray;
+    border-radius: 9px;
+    margin-top: 0.5em;
+border-color:  rgb(150, 114, 0);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 3px 0 3px;
+	color:  rgb(150, 114, 0);
+}</string>
+            </property>
+            <property name="title">
+             <string>Constrain To Surface</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_24">
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_23">
+               <property name="spacing">
+                <number>3</number>
+               </property>
+               <item row="4" column="0">
+                <widget class="QCheckBox" name="chk_srfConTra">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="toolTip">
+                  <string>Constrain object translation</string>
+                 </property>
+                 <property name="text">
+                  <string>Translate</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QCheckBox" name="chk_srfConRot">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="toolTip">
+                  <string>Constrain object rotation</string>
+                 </property>
+                 <property name="text">
+                  <string>Rotate</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0" colspan="4">
+                <widget class="QComboBox" name="cbo_utilConsMethod">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Follicle constraint will only follow vertex deformations, not object transformations. Parent nurbs surface needs to be skinned</string>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Matrix</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Follicle</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="4" column="3">
+                <widget class="QPushButton" name="btn_utilConstrainToSrf">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Constrain selected items to nurbs surface by closest point. Select nurbs surface last</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(253, 240, 197);
+color: rgb(0, 0, 0);
+}
+QPushButton:hover {   
+border-style: solid;
+border-color: black;
+border-width: 1px;
+border-radius: 4px;
+background-color: rgb(240, 240, 240
+);
+color: rgb(0, 0, 0);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Go</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="2">
+                <widget class="QCheckBox" name="chk_srfPositionOffset">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="toolTip">
+                  <string>Constrains objects to surface using offset matrix.</string>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+                 </property>
+                 <property name="text">
+                  <string>Offset</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
                </item>
               </layout>
              </item>
@@ -4883,6 +4942,22 @@ color: rgb(0, 0, 0);
   <connection>
    <sender>chk_T</sender>
    <signal>clicked(bool)</signal>
+   <receiver>chk_axisTX</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>244</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>244</x>
+     <y>323</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chk_T</sender>
+   <signal>clicked(bool)</signal>
    <receiver>chk_axisTY</receiver>
    <slot>setChecked(bool)</slot>
    <hints>
@@ -4899,7 +4974,7 @@ color: rgb(0, 0, 0);
   <connection>
    <sender>chk_T</sender>
    <signal>clicked(bool)</signal>
-   <receiver>chk_axisTX</receiver>
+   <receiver>chk_axisTZ</receiver>
    <slot>setChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -4908,39 +4983,7 @@ color: rgb(0, 0, 0);
     </hint>
     <hint type="destinationlabel">
      <x>244</x>
-     <y>323</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>chk_R</sender>
-   <signal>clicked(bool)</signal>
-   <receiver>chk_axisRZ</receiver>
-   <slot>setChecked(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>284</x>
-     <y>300</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>284</x>
      <y>369</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>chk_S</sender>
-   <signal>clicked(bool)</signal>
-   <receiver>chk_axisSX</receiver>
-   <slot>setChecked(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>326</x>
-     <y>300</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>326</x>
-     <y>323</y>
     </hint>
    </hints>
   </connection>
@@ -4977,18 +5020,34 @@ color: rgb(0, 0, 0);
    </hints>
   </connection>
   <connection>
-   <sender>chk_T</sender>
+   <sender>chk_R</sender>
    <signal>clicked(bool)</signal>
-   <receiver>chk_axisTZ</receiver>
+   <receiver>chk_axisRZ</receiver>
    <slot>setChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>244</x>
+     <x>284</x>
      <y>300</y>
     </hint>
     <hint type="destinationlabel">
-     <x>244</x>
+     <x>284</x>
      <y>369</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chk_S</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>chk_axisSX</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>326</x>
+     <y>323</y>
     </hint>
    </hints>
   </connection>

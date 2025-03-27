@@ -592,6 +592,9 @@ class ControlMainWindow(QtWidgets.QMainWindow):
 
     def constrainToSrf(self):
         cnsTyp = self.ui.cbo_utilConsMethod.currentIndex()
+        translate = self.ui.chk_srfConTra.isChecked()
+        rotate = self.ui.chk_srfConRot.isChecked()
+        offset = self.ui.chk_srfPositionOffset.isChecked()
         
         if len(cmds.ls(sl=1)) > 1:
             if cmds.objectType(omu.getDagPath(cmds.ls(sl=1)[-1], shape=1))=='nurbsSurface':
@@ -600,9 +603,9 @@ class ControlMainWindow(QtWidgets.QMainWindow):
                 cnsLst.pop() # Remove NurbsSurface
 
                 if cnsTyp == 0:
-                    [srf.constToSrfMatrix(obj, cnsSrf) for obj in cnsLst]
+                    [srf.constToSrfMatrix(obj, cnsSrf, translate=translate, rotate=rotate, offset=offset) for obj in cnsLst]
                 if cnsTyp == 1:
-                    [srf.constToSrfFol(obj, cnsSrf) for obj in cnsLst]
+                    [srf.constToSrfFol(obj, cnsSrf, translate=translate, rotate=rotate, offset=offset) for obj in cnsLst]
             else:
                 raise TypeError('Last selection is not of type NurbsSurface')
         else:
@@ -616,21 +619,21 @@ class ControlMainWindow(QtWidgets.QMainWindow):
                     cnsLst = cmds.ls(sl=1)
                     cnsLst.pop() # Remove NurbsCurve
                     cnsLst.sort()
-                    
-                    if self.ui.chk_crvPositionOnly.isChecked(): # position only
-                        crv.consToCrv(cnsLst, cnsCrv)
-                        return
 
                     upType = self.ui.cbo_crvConstType.currentIndex()
                     upObj  = self.ui.lne_crvUpObj.text()
-                    
+                    offset = self.ui.chk_crvPositionOffset.isChecked()
+                    rotate = self.ui.chk_crvPositionOnly.isChecked()
+                    rotate = not rotate # Position Only
+                   
                     if self.ui.chk_crvParametric.isChecked():
                         crv.consToCrvParametric(cnsLst, cnsCrv, upType=upType, inverseUp=0, 
-                                                inverseFront=0, frontAxis=0, upAxis=2, upObj=upObj)
+                                                inverseFront=0, frontAxis=0, upAxis=2, upObj=upObj,
+                                                offset=offset, rotate=rotate)
                     else:
                         crv.consToCrvNonParametric(cnsLst, cnsCrv, upType=upType, inverseUp=0, 
-                                                inverseFront=0, frontAxis=0, upAxis=2, upObj=upObj)
-
+                                                inverseFront=0, frontAxis=0, upAxis=2, upObj=upObj,
+                                                offset=offset, rotate=rotate)
                 else:
                     raise TypeError('Last selection is not of type nurbsCurve')
             else:

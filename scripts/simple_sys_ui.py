@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'cmSimpleUi.ui'
+## Form generated from reading UI file 'simple_sys_ui.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
+# Modify import modules in cmSimpleUi.py after compiling
 try: # Maya 2025
     from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
         QMetaObject, QObject, QPoint, QRect,
@@ -1235,7 +1236,7 @@ class Ui_MainWindow(object):
 
         self.groupBox_44 = QGroupBox(self.tab_7)
         self.groupBox_44.setObjectName(u"groupBox_44")
-        self.groupBox_44.setMinimumSize(QSize(250, 120))
+        self.groupBox_44.setMinimumSize(QSize(250, 60))
         self.groupBox_44.setMaximumSize(QSize(250, 120))
         self.groupBox_44.setStyleSheet(u"QGroupBox {\n"
 "    border: 1px solid gray;\n"
@@ -1257,30 +1258,6 @@ class Ui_MainWindow(object):
         self.gridLayout_32 = QGridLayout()
         self.gridLayout_32.setSpacing(3)
         self.gridLayout_32.setObjectName(u"gridLayout_32")
-        self.btn_smoothEdges = QPushButton(self.groupBox_44)
-        self.btn_smoothEdges.setObjectName(u"btn_smoothEdges")
-        self.btn_smoothEdges.setEnabled(True)
-        self.btn_smoothEdges.setMinimumSize(QSize(0, 25))
-        self.btn_smoothEdges.setStyleSheet(u"QPushButton{\n"
-"border-style: solid;\n"
-"border-color: black;\n"
-"border-width: 1px;\n"
-"border-radius: 4px;\n"
-"background-color: rgb(253, 240, 197);\n"
-"color: rgb(0, 0, 0);\n"
-"}\n"
-"QPushButton:hover {   \n"
-"border-style: solid;\n"
-"border-color: black;\n"
-"border-width: 1px;\n"
-"border-radius: 4px;\n"
-"background-color: rgb(240, 240, 240\n"
-");\n"
-"color: rgb(0, 0, 0);\n"
-"}")
-
-        self.gridLayout_32.addWidget(self.btn_smoothEdges, 0, 0, 1, 1)
-
         self.btn_delUnShp = QPushButton(self.groupBox_44)
         self.btn_delUnShp.setObjectName(u"btn_delUnShp")
         self.btn_delUnShp.setMinimumSize(QSize(0, 25))
@@ -1302,7 +1279,7 @@ class Ui_MainWindow(object):
 "color: rgb(0, 0, 0);\n"
 "}")
 
-        self.gridLayout_32.addWidget(self.btn_delUnShp, 1, 0, 1, 1)
+        self.gridLayout_32.addWidget(self.btn_delUnShp, 0, 0, 1, 1)
 
 
         self.gridLayout_121.addLayout(self.gridLayout_32, 0, 0, 1, 1)
@@ -1445,6 +1422,7 @@ class Ui_MainWindow(object):
 
         self.chk_strapSkipLast = QCheckBox(self.grp_strapGuide)
         self.chk_strapSkipLast.setObjectName(u"chk_strapSkipLast")
+        self.chk_strapSkipLast.setEnabled(False)
         self.chk_strapSkipLast.setLayoutDirection(Qt.LeftToRight)
         self.chk_strapSkipLast.setChecked(False)
 
@@ -1891,7 +1869,7 @@ class Ui_MainWindow(object):
         self.spn_utilRow.setMaximumSize(QSize(75, 16777215))
         self.spn_utilRow.setMinimum(1)
         self.spn_utilRow.setMaximum(500)
-        self.spn_utilRow.setValue(1)
+        self.spn_utilRow.setValue(10)
 
         self.gridLayout_89.addWidget(self.spn_utilRow, 0, 0, 1, 1)
 
@@ -1911,7 +1889,7 @@ class Ui_MainWindow(object):
         self.spn_utilColumn.setMaximumSize(QSize(75, 16777215))
         self.spn_utilColumn.setMinimum(1)
         self.spn_utilColumn.setMaximum(500)
-        self.spn_utilColumn.setValue(1)
+        self.spn_utilColumn.setValue(5)
 
         self.gridLayout_94.addWidget(self.spn_utilColumn, 0, 0, 1, 1)
 
@@ -1939,13 +1917,6 @@ class Ui_MainWindow(object):
         self.gridLayout_99 = QGridLayout()
         self.gridLayout_99.setSpacing(3)
         self.gridLayout_99.setObjectName(u"gridLayout_99")
-        self.chk_srfSkipLast = QCheckBox(self.groupBox_13)
-        self.chk_srfSkipLast.setObjectName(u"chk_srfSkipLast")
-        self.chk_srfSkipLast.setLayoutDirection(Qt.LeftToRight)
-        self.chk_srfSkipLast.setChecked(False)
-
-        self.gridLayout_99.addWidget(self.chk_srfSkipLast, 0, 0, 1, 1)
-
         self.btn_utilCreateOnSrf = QPushButton(self.groupBox_13)
         self.btn_utilCreateOnSrf.setObjectName(u"btn_utilCreateOnSrf")
         self.btn_utilCreateOnSrf.setMinimumSize(QSize(100, 25))
@@ -1968,6 +1939,14 @@ class Ui_MainWindow(object):
 "}")
 
         self.gridLayout_99.addWidget(self.btn_utilCreateOnSrf, 1, 0, 1, 1)
+
+        self.chk_srfSkipLast = QCheckBox(self.groupBox_13)
+        self.chk_srfSkipLast.setObjectName(u"chk_srfSkipLast")
+        self.chk_srfSkipLast.setEnabled(False)
+        self.chk_srfSkipLast.setLayoutDirection(Qt.LeftToRight)
+        self.chk_srfSkipLast.setChecked(False)
+
+        self.gridLayout_99.addWidget(self.chk_srfSkipLast, 0, 0, 1, 1)
 
 
         self.gridLayout_77.addLayout(self.gridLayout_99, 0, 4, 1, 1)
@@ -2010,7 +1989,7 @@ class Ui_MainWindow(object):
         self.spn_crvNumOf.setMaximumSize(QSize(75, 16777215))
         self.spn_crvNumOf.setMinimum(1)
         self.spn_crvNumOf.setMaximum(1000)
-        self.spn_crvNumOf.setValue(1)
+        self.spn_crvNumOf.setValue(10)
 
         self.gridLayout_102.addWidget(self.spn_crvNumOf, 0, 0, 1, 1)
 
@@ -2280,28 +2259,6 @@ class Ui_MainWindow(object):
         self.gridLayout_23 = QGridLayout()
         self.gridLayout_23.setSpacing(3)
         self.gridLayout_23.setObjectName(u"gridLayout_23")
-        self.chk_srfConTra = QCheckBox(self.groupBox_15)
-        self.chk_srfConTra.setObjectName(u"chk_srfConTra")
-        self.chk_srfConTra.setEnabled(True)
-        self.chk_srfConTra.setChecked(True)
-
-        self.gridLayout_23.addWidget(self.chk_srfConTra, 4, 0, 1, 1)
-
-        self.chk_srfConRot = QCheckBox(self.groupBox_15)
-        self.chk_srfConRot.setObjectName(u"chk_srfConRot")
-        self.chk_srfConRot.setEnabled(True)
-        self.chk_srfConRot.setChecked(True)
-
-        self.gridLayout_23.addWidget(self.chk_srfConRot, 4, 1, 1, 1)
-
-        self.cbo_utilConsMethod = QComboBox(self.groupBox_15)
-        self.cbo_utilConsMethod.addItem("")
-        self.cbo_utilConsMethod.addItem("")
-        self.cbo_utilConsMethod.setObjectName(u"cbo_utilConsMethod")
-        self.cbo_utilConsMethod.setMinimumSize(QSize(100, 0))
-
-        self.gridLayout_23.addWidget(self.cbo_utilConsMethod, 1, 0, 1, 4)
-
         self.btn_utilConstrainToSrf = QPushButton(self.groupBox_15)
         self.btn_utilConstrainToSrf.setObjectName(u"btn_utilConstrainToSrf")
         self.btn_utilConstrainToSrf.setMinimumSize(QSize(100, 25))
@@ -2323,7 +2280,21 @@ class Ui_MainWindow(object):
 "color: rgb(0, 0, 0);\n"
 "}")
 
-        self.gridLayout_23.addWidget(self.btn_utilConstrainToSrf, 4, 3, 1, 1)
+        self.gridLayout_23.addWidget(self.btn_utilConstrainToSrf, 5, 3, 1, 1)
+
+        self.chk_srfConRot = QCheckBox(self.groupBox_15)
+        self.chk_srfConRot.setObjectName(u"chk_srfConRot")
+        self.chk_srfConRot.setEnabled(True)
+        self.chk_srfConRot.setChecked(True)
+
+        self.gridLayout_23.addWidget(self.chk_srfConRot, 5, 1, 1, 1)
+
+        self.chk_srfConTra = QCheckBox(self.groupBox_15)
+        self.chk_srfConTra.setObjectName(u"chk_srfConTra")
+        self.chk_srfConTra.setEnabled(True)
+        self.chk_srfConTra.setChecked(True)
+
+        self.gridLayout_23.addWidget(self.chk_srfConTra, 5, 0, 1, 1)
 
         self.chk_srfPositionOffset = QCheckBox(self.groupBox_15)
         self.chk_srfPositionOffset.setObjectName(u"chk_srfPositionOffset")
@@ -2332,7 +2303,31 @@ class Ui_MainWindow(object):
         self.chk_srfPositionOffset.setCheckable(True)
         self.chk_srfPositionOffset.setChecked(False)
 
-        self.gridLayout_23.addWidget(self.chk_srfPositionOffset, 4, 2, 1, 1)
+        self.gridLayout_23.addWidget(self.chk_srfPositionOffset, 5, 2, 1, 1)
+
+        self.cbo_utilConsMethod = QComboBox(self.groupBox_15)
+        self.cbo_utilConsMethod.addItem("")
+        self.cbo_utilConsMethod.addItem("")
+        self.cbo_utilConsMethod.setObjectName(u"cbo_utilConsMethod")
+        self.cbo_utilConsMethod.setMinimumSize(QSize(100, 0))
+
+        self.gridLayout_23.addWidget(self.cbo_utilConsMethod, 1, 0, 1, 4)
+
+        self.btn_drvObjGet = QPushButton(self.groupBox_15)
+        self.btn_drvObjGet.setObjectName(u"btn_drvObjGet")
+        self.btn_drvObjGet.setMinimumSize(QSize(40, 0))
+        self.btn_drvObjGet.setMaximumSize(QSize(80, 16777215))
+
+        self.gridLayout_23.addWidget(self.btn_drvObjGet, 3, 3, 1, 1, Qt.AlignRight)
+
+        self.lne_drvObj = QLineEdit(self.groupBox_15)
+        self.lne_drvObj.setObjectName(u"lne_drvObj")
+        self.lne_drvObj.setEnabled(True)
+        self.lne_drvObj.setMinimumSize(QSize(275, 0))
+        self.lne_drvObj.setMaximumSize(QSize(150, 16777215))
+        self.lne_drvObj.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_23.addWidget(self.lne_drvObj, 3, 0, 1, 2)
 
 
         self.gridLayout_24.addLayout(self.gridLayout_23, 0, 0, 1, 1)
@@ -2580,7 +2575,7 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"cmSimpleSys", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"simple_sys", None))
         self.groupBox.setTitle("")
         self.groupBox_17.setTitle(QCoreApplication.translate("MainWindow", u"Pre Build", None))
         self.lne_globCtlSuffix.setText(QCoreApplication.translate("MainWindow", u"ctl", None))
@@ -2782,9 +2777,9 @@ class Ui_MainWindow(object):
 #if QT_CONFIG(tooltip)
         self.cbo_preBindJoint.setToolTip(QCoreApplication.translate("MainWindow", u"Joint suffix", None))
 #endif // QT_CONFIG(tooltip)
-        self.cbo_preBindBfr.setItemText(0, QCoreApplication.translate("MainWindow", u"ctlRef (Strap Rig)", None))
-        self.cbo_preBindBfr.setItemText(1, QCoreApplication.translate("MainWindow", u"cns (mGear Jnt)", None))
-        self.cbo_preBindBfr.setItemText(2, QCoreApplication.translate("MainWindow", u"bfr (Face Rig)", None))
+        self.cbo_preBindBfr.setItemText(0, QCoreApplication.translate("MainWindow", u"bfr (rdCtl)", None))
+        self.cbo_preBindBfr.setItemText(1, QCoreApplication.translate("MainWindow", u"ctlRef (Strap Rig)", None))
+        self.cbo_preBindBfr.setItemText(2, QCoreApplication.translate("MainWindow", u"cns (mGear Jnt)", None))
 
 #if QT_CONFIG(tooltip)
         self.cbo_preBindBfr.setToolTip(QCoreApplication.translate("MainWindow", u"Buffer suffix", None))
@@ -2816,11 +2811,7 @@ class Ui_MainWindow(object):
         self.btn_meshMatchPoint.setToolTip(QCoreApplication.translate("MainWindow", u"Target to follow source mesh transformation, and deformation. Works on Mesh, Nurbs, Curves. Select DRIVER then DRIVEN", None))
 #endif // QT_CONFIG(tooltip)
         self.btn_meshMatchPoint.setText(QCoreApplication.translate("MainWindow", u"Match Point Pos", None))
-        self.groupBox_44.setTitle(QCoreApplication.translate("MainWindow", u"Scale Published Geo", None))
-#if QT_CONFIG(tooltip)
-        self.btn_smoothEdges.setToolTip(QCoreApplication.translate("MainWindow", u"Smooth polygon edges", None))
-#endif // QT_CONFIG(tooltip)
-        self.btn_smoothEdges.setText(QCoreApplication.translate("MainWindow", u"Smooth Edges", None))
+        self.groupBox_44.setTitle(QCoreApplication.translate("MainWindow", u"Shapes", None))
 #if QT_CONFIG(tooltip)
         self.btn_delUnShp.setToolTip(QCoreApplication.translate("MainWindow", u"Delete unused shape nodes from the scene.", None))
 #endif // QT_CONFIG(tooltip)
@@ -2920,13 +2911,13 @@ class Ui_MainWindow(object):
         self.lbl_utilRow.setText(QCoreApplication.translate("MainWindow", u"Row Num.", None))
         self.lbl_utilColumn.setText(QCoreApplication.translate("MainWindow", u"Column Num", None))
 #if QT_CONFIG(tooltip)
-        self.chk_srfSkipLast.setToolTip(QCoreApplication.translate("MainWindow", u"For closed surfaces", None))
-#endif // QT_CONFIG(tooltip)
-        self.chk_srfSkipLast.setText(QCoreApplication.translate("MainWindow", u"Skip Last", None))
-#if QT_CONFIG(tooltip)
         self.btn_utilCreateOnSrf.setToolTip(QCoreApplication.translate("MainWindow", u"Creates the selected items evenly along nurbs surface", None))
 #endif // QT_CONFIG(tooltip)
         self.btn_utilCreateOnSrf.setText(QCoreApplication.translate("MainWindow", u"Go", None))
+#if QT_CONFIG(tooltip)
+        self.chk_srfSkipLast.setToolTip(QCoreApplication.translate("MainWindow", u"For closed surfaces", None))
+#endif // QT_CONFIG(tooltip)
+        self.chk_srfSkipLast.setText(QCoreApplication.translate("MainWindow", u"Skip Last", None))
         self.groupBox_14.setTitle(QCoreApplication.translate("MainWindow", u"Create On Curve", None))
         self.lbl_crvNumOf.setText(QCoreApplication.translate("MainWindow", u"No. of", None))
         self.cbo_crvNumOf.setItemText(0, QCoreApplication.translate("MainWindow", u"Joints", None))
@@ -2971,27 +2962,32 @@ class Ui_MainWindow(object):
         self.chk_crvPositionOffset.setText(QCoreApplication.translate("MainWindow", u"Offset", None))
         self.groupBox_15.setTitle(QCoreApplication.translate("MainWindow", u"Constrain To Surface", None))
 #if QT_CONFIG(tooltip)
-        self.chk_srfConTra.setToolTip(QCoreApplication.translate("MainWindow", u"Constrain object translation", None))
+        self.btn_utilConstrainToSrf.setToolTip(QCoreApplication.translate("MainWindow", u"Constrain selected items to nurbs surface by closest point. Select nurbs surface last", None))
 #endif // QT_CONFIG(tooltip)
-        self.chk_srfConTra.setText(QCoreApplication.translate("MainWindow", u"Translate", None))
+        self.btn_utilConstrainToSrf.setText(QCoreApplication.translate("MainWindow", u"Go", None))
 #if QT_CONFIG(tooltip)
         self.chk_srfConRot.setToolTip(QCoreApplication.translate("MainWindow", u"Constrain object rotation", None))
 #endif // QT_CONFIG(tooltip)
         self.chk_srfConRot.setText(QCoreApplication.translate("MainWindow", u"Rotate", None))
+#if QT_CONFIG(tooltip)
+        self.chk_srfConTra.setToolTip(QCoreApplication.translate("MainWindow", u"Constrain object translation", None))
+#endif // QT_CONFIG(tooltip)
+        self.chk_srfConTra.setText(QCoreApplication.translate("MainWindow", u"Translate", None))
+#if QT_CONFIG(tooltip)
+        self.chk_srfPositionOffset.setToolTip(QCoreApplication.translate("MainWindow", u"Constrains objects to surface using offset matrix.", None))
+#endif // QT_CONFIG(tooltip)
+        self.chk_srfPositionOffset.setText(QCoreApplication.translate("MainWindow", u"Offset", None))
         self.cbo_utilConsMethod.setItemText(0, QCoreApplication.translate("MainWindow", u"Matrix", None))
         self.cbo_utilConsMethod.setItemText(1, QCoreApplication.translate("MainWindow", u"Follicle", None))
 
 #if QT_CONFIG(tooltip)
         self.cbo_utilConsMethod.setToolTip(QCoreApplication.translate("MainWindow", u"Follicle constraint will only follow vertex deformations, not object transformations. Parent nurbs surface needs to be skinned", None))
 #endif // QT_CONFIG(tooltip)
+        self.btn_drvObjGet.setText(QCoreApplication.translate("MainWindow", u"<<", None))
 #if QT_CONFIG(tooltip)
-        self.btn_utilConstrainToSrf.setToolTip(QCoreApplication.translate("MainWindow", u"Constrain selected items to nurbs surface by closest point. Select nurbs surface last", None))
+        self.lne_drvObj.setToolTip(QCoreApplication.translate("MainWindow", u"Use driver object to animate constrained obj along surface", None))
 #endif // QT_CONFIG(tooltip)
-        self.btn_utilConstrainToSrf.setText(QCoreApplication.translate("MainWindow", u"Go", None))
-#if QT_CONFIG(tooltip)
-        self.chk_srfPositionOffset.setToolTip(QCoreApplication.translate("MainWindow", u"Constrains objects to surface using offset matrix.", None))
-#endif // QT_CONFIG(tooltip)
-        self.chk_srfPositionOffset.setText(QCoreApplication.translate("MainWindow", u"Offset", None))
+        self.lne_drvObj.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Driver Obj", None))
         self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_9), QCoreApplication.translate("MainWindow", u"Constrain To", None))
         self.groupBox_33.setTitle(QCoreApplication.translate("MainWindow", u"Singles", None))
         self.lne_singlesName.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Ctl Name", None))
